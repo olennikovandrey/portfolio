@@ -1,0 +1,72 @@
+$buttonColor: #3a4576
+$mainTextColor: #120d0e
+$secondaryTextColor: #3d3b3c
+$secondaryTextColorLight: #bebebe
+$generalBackground: #fff
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+  margin: 0
+  &:before
+    box-sizing: border-box
+  &:after
+    box-sizing: border-box
+
+h1
+  font-size: calc(3.5rem + 1vw)
+  color: #120d0E
+  margin-bottom: 10px
+
+h2
+  font-size: calc(3rem + 1vw)
+  color: #bebebe
+  margin-bottom: 20px
+
+h3
+  text-align: center
+  font-size: calc(2.5rem + 1vw)
+  margin-bottom: 50px
+
+html
+  width: 100vw
+  font-family: Roboto, sans-serif
+  font-size: 20px
+  background-color: $buttonColor
+
+img
+  display: block
+  object-fit: scale-down
+
+input,
+button,
+select
+  font: inherit
+
+section
+  margin: 0 104px
+
+button
+  width: 45%
+  height: 60px
+  background-color: #3a4576
+  cursor: pointer
+  color: #fff
+  font-size: calc(0.8rem + 1vmin)
+  line-height: 40px
+  text-align: center
+  transition: 0.2s ease-in
+  &:hover
+    background-color: #1d295e
+
+a
+  text-decoration: none
+  color: inherit
+
+#root
+  max-width: 1440px
+  background-color: $generalBackground
+  margin: 0 auto
