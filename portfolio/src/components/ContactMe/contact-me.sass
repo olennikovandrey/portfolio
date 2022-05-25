@@ -1,11 +1,20 @@
 .contact-me-wrapper
   height: auto
   padding-bottom: 50px
+  @media only screen and (max-width: 425px)
+    padding-bottom: 20px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
   & > div
     width: 80%
-    margin: 0 auto
+    margin: 0
     display: flex
-    align-items: center
+    @media only screen and (max-width: 425px)
+      margin: 0
+      align-items: center
+      justify-content: center
 
 .contact-me-info
   width: 50%
@@ -14,13 +23,31 @@
   display: flex
   flex-direction: column
   justify-content: flex-start
-  align-items:
+  align-items: center
+  @media only screen and (max-width: 425px)
+    margin-left: 0
+    text-align: center
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: auto
 
 .contact-me-social
   display: flex
-  div
+  @media only screen and (max-width: 425px)
+    margin: 0 auto
+    align-items: center
+  & div
     margin: 50px 15px 30px 0
-
+    @media only screen and (max-width: 425px)
+      margin: 0
+  & img
+    width: 60px
+    height: 60px
+    @media only screen and (max-width: 425px)
+      margin: 5px 10px 10px
+      width: 40px
+      height: 40px
 
 .contact-me-mail
   height: 100px
@@ -32,6 +59,10 @@
     &::before
       margin-right: 5px
       content: url("../../assets/images/contact me/location.svg")
+    @media only screen and (max-width: 425px)
+      font-size: 15px
 
   & p:nth-child(2), p:nth-child(3)
     text-decoration: underline
+  @media only screen and (max-width: 425px)
+    font-size: 15px

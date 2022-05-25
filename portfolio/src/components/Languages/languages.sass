@@ -5,6 +5,8 @@
   justify-content: center
   align-items: center
   padding-bottom: 50px
+  @media only screen and (max-width: 425px)
+    padding-bottom: 30px
 
 .language-item-wrapper
   height: 270px
@@ -14,9 +16,23 @@
   flex-direction: column
   justify-content: space-between
   align-items: center
+  & img
+    @media only screen and (max-width: 425px)
+      width: 100px
+      margin: 10px 0
   & p:first-of-type
     font-size: 1.25rem
     font-weight: 700
+    @media only screen and (max-width: 425px)
+      margin-bottom: 10px
+      font-size: 0.75rem
   & p:last-of-type
     font-size: 1rem
     font-weight: 500
+    @media only screen and (max-width: 425px)
+      font-size: 0.7rem
+  @media only screen and (max-width: 425px)
+    height: 200px
+    width: 130px
+    margin: 0 10px
+    height: auto

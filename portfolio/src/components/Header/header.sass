@@ -1,3 +1,9 @@
+$maxWidth: 1440
+@mixin adaptiv-font($pcSize, $mobSize)
+	$addSize: $pcSize - $mobSize
+	$maxWidth: $maxWidth - 320
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 280px) / #{$maxWidth}))
+
 header
   position: sticky
   top: 0
@@ -8,10 +14,18 @@ header
   align-items: center
   justify-content: space-between
   border-bottom: 1px solid #000
-  font-size: calc(0.8rem + 1vmin)
+  @include adaptiv-font(25, 15)
   background-color: #fff
   box-sizing: border-box
   z-index: 5
+  @media only screen and (max-width: 1281px)
+    padding: 0 70px
+    height: 80px
+  @media only screen and (max-width: 1025px)
+    padding: 0 50px
+    height: 60px
+  @media only screen and (max-width: 426px)
+    display: none
 
 nav
   color: inherit

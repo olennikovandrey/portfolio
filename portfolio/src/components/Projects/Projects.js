@@ -8,17 +8,23 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <section id="Projects">
+    <section className="projects-wrapper" id="Projects">
       <h3>Projects</h3>
       <div className="projects-preview-wrapper">
         <Swiper
           cssMode={ true}
           loop={ true }
           slidesPerView={ 1 }
+          centeredSlides={ true }
           navigation={ true }
           pagination={ true }
           mousewheel={ true }
           keyboard={ true }
+          allowTouchMove={ true }
+          simulateTouch={ true }
+          touchRatio={ 1 }
+          slideToClickedSlide={ true }
+          spaceBetween={ 20 }
           modules={ [Navigation, Pagination, Mousewheel, Keyboard] }
           className="projects-preview-wrapper"
         >

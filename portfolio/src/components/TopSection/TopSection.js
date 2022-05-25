@@ -1,4 +1,3 @@
-import "./top-section.sass";
 import photo from  "../../assets/images/5.jpg";
 import CVPDF from "../../files/Andrey OlennikovCV.pdf";
 import CVPNG from "../../files/Andrey OlennikovCV.png";
@@ -10,7 +9,12 @@ export default function TopSection() {
       <div className="top-section-text">
         <div>
           <h1>Andrey Olennikov</h1>
-          <h2>Front-end developer</h2>
+          <div>
+            <h2>Front-end developer</h2>
+            <div className="top-section-image-mobile-wrapper">
+              <img src={ photo } alt="Andrey Olennikov" className="top-section-image-mobile" />
+            </div>
+          </div>
         </div>
         <div>
           <span className="top-section-description">Hi! My name is Andrey Olennikov. I&apos;m looking for a job or internship as a Junior JavaScript/React Developer.
@@ -22,10 +26,10 @@ export default function TopSection() {
         </div>
         <div className="top-section-btns">
           <button>
-            <a href={ CVPDF } download="Andrey_Olennikov_CV_PDF">Dowload CV (pdf)</a>
+            <a href={ CVPDF } download="Andrey_Olennikov_CV_PDF">Download CV (pdf)</a>
           </button>
           <button>
-            <a href={ CVPNG } download="Andrey_Olennikov_CV_PNG">Dowload CV (png)</a>
+            <a href={ CVPNG } download="Andrey_Olennikov_CV_PNG">Download CV (png)</a>
           </button>
         </div>
       </div>

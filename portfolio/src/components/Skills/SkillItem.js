@@ -6,7 +6,7 @@ export default function SkillItem({ title, level, icon }) {
     <div className="skill-item-wrapper">
       <div className="skill-item-logo-title">
         <div className="skill-item-logo">
-          <img src={ icon } alt={ title } width="120px" />
+          <img src={ icon } alt={ title } />
         </div>
         <p className="skill-item-title">{ title }</p>
       </div>

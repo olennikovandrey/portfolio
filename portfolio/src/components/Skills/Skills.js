@@ -19,7 +19,7 @@ export default function Skills() {
           />)
         }
       </div>
-      <button className="skills-more-btn" onClick={() => {
+      <button onClick={() => {
         setVisible(!visible);
         const skillsWrapper = document.querySelector(".skill-items-wrapper");
         skillsWrapper.setAttribute("data-state", visible ? "" : "active");

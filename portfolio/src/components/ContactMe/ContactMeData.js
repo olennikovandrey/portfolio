@@ -11,7 +11,7 @@ export const contactData = [
   },
   {
     source: "linkedin.com",
-    link: "https://www.linkedin.com/in/andrei-alennikau-255313233/",
+    link: "https://www.linkedin.com/in/andrey-olennikov-255313233/",
     icon: linkedin
   },
   {

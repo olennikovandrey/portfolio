@@ -16,7 +16,7 @@ export default function ContactMe() {
             { contactData.map(item =>
               <div key={ item.link }>
                 <a href={ item.link } target="_blank" rel="noreferrer">
-                  <img src={ item.icon } alt={ item.source } width="60" height="60"/>
+                  <img src={ item.icon } alt={ item.source } />
                 </a>
               </div>
             ) }

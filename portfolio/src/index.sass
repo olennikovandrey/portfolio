@@ -4,6 +4,14 @@ $secondaryTextColor: #3d3b3c
 $secondaryTextColorLight: #bebebe
 $generalBackground: #fff
 
+@import "../src/components/TopSection/top-section"
+
+$maxWidth: 1440
+@mixin adaptiv-font($pcSize, $mobSize)
+	$addSize: $pcSize - $mobSize
+	$maxWidth: $maxWidth - 320
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 280px) / #{$maxWidth}))
+
 body,
 h1,
 h2,
@@ -17,19 +25,27 @@ p,
     box-sizing: border-box
 
 h1
-  font-size: calc(3.5rem + 1vw)
+  @include adaptiv-font(60,20)
   color: #120d0E
   margin-bottom: 10px
+  @media only screen and (max-width: 426px)
+    text-align: center
 
 h2
-  font-size: calc(3rem + 1vw)
+  @include adaptiv-font(50, 15)
   color: #bebebe
   margin-bottom: 20px
 
 h3
+  @include adaptiv-font(45, 13)
   text-align: center
-  font-size: calc(2.5rem + 1vw)
   margin-bottom: 50px
+  @media only screen and (max-width: 1281px)
+    margin-bottom: 30px
+  @media only screen and (max-width: 1025px)
+    margin-bottom: 20px
+  @media only screen and (max-width: 425px)
+    margin-bottom: 5px
 
 html
   width: 100vw
@@ -48,19 +64,36 @@ select
 
 section
   margin: 0 104px
+  height: auto
+  @media only screen and (max-width: 1280px)
+    margin: 0 70px
+  @media only screen and (max-width: 1025px)
+    margin: 0 50px
+  @media only screen and (max-width: 426px)
+    margin: 0 30px
 
 button
-  width: 45%
+  width: 300px
   height: 60px
   background-color: #3a4576
   cursor: pointer
   color: #fff
-  font-size: calc(0.8rem + 1vmin)
+  border: none
+  @include adaptiv-font(20, 15)
   line-height: 40px
   text-align: center
   transition: 0.2s ease-in
   &:hover
     background-color: #1d295e
+  @media only screen and (max-width: 1281px)
+    width: 290px
+  @media only screen and (max-width: 1025px)
+    height: 40px
+    width: 200px
+    line-height: 35px
+  @media only screen and (max-width: 425px)
+    @include adaptiv-font(20, 11)
+    width: 45%
 
 a
   text-decoration: none
