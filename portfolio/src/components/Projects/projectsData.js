@@ -1,9 +1,11 @@
 import scandiDemoAnim from "../../assets/images/projects/scandi_demo.gif";
 import tripHouseDemoAnim from "../../assets/images/projects/TripHouse_demo.gif";
 import modnikkyAnim from "../../assets/images/projects/Modnikky_demo.gif";
+import dictionaryAnim from "../../assets/images/projects/dictionary_demo.gif";
 import scandiDemoImg from "../../assets/images/projects/scandi_demo.png";
 import tripHouseDemoImg from "../../assets/images/projects/triphouse_demo.png";
 import modnikkyDemoImg from "../../assets/images/projects/modnikky_demo.png";
+import dictionaryDemoImg from "../../assets/images/projects/dictionary_demo.png";
 
 export const projectsData = [
   {
@@ -26,5 +28,12 @@ export const projectsData = [
     anim: [modnikkyAnim],
     image: [modnikkyDemoImg],
     link: "https://github.com/olennikovandrey/if-diploma"
+  },
+  {
+    title: "Dictionary (noncommercial project)",
+    description: "English dictionary. Source - https://dictionaryapi.dev/. Technologies: React, Redux, Redux thunk, TypeScript, react router, css",
+    anim: [dictionaryAnim],
+    image: [dictionaryDemoImg],
+    link: "https://github.com/olennikovandrey/satellite-test"
   },
 ];

@@ -16,6 +16,7 @@ import npm from "../../assets/images/skills/npm.svg";
 import vscode from "../../assets/images/skills/vscode.svg";
 import graphql from "../../assets/images/skills/graphql.png";
 import apollo from "../../assets/images/skills/apollo.png";
+import typescript from "../../assets/images/skills/typescript.svg";
 import rat2 from "../../assets/images/skills/rating/rating2.svg";
 import rat3 from "../../assets/images/skills/rating/rating3.svg";
 import rat4 from "../../assets/images/skills/rating/rating4.svg";
@@ -36,6 +37,11 @@ export const skillsData = [
     title: "JavaScript",
     level: rat4,
     icon: js
+  },
+  {
+    title: "TypeScript",
+    level: rat2,
+    icon: typescript
   },
   {
     title: "HTML",
