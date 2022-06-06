@@ -46,9 +46,11 @@ $maxWidth: 1440
   justify-content: center
   flex-flow: wrap
   overflow-y: hidden
-  transition: all 0.2s ease-in
+  transition: all 0.5s ease-in
   &[data-state="active"]
-    height: auto
+    height: 1150px
+    @media only screen and (max-width: 425px)
+      height: 550px
   @media only screen and (max-width: 1281px)
     height: 250px
   @media only screen and (max-width: 425px)
