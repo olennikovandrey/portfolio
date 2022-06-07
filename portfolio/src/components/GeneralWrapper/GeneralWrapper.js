@@ -14,24 +14,32 @@ function GeneralWrapper() {
   const [isLoaded, setIsLoaded] = useState(false);
   const lang = useSelector(state => state.lang);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoaded(true);
+    }, 8000);
+  }, []);
+
   return (
     <>
-      <div className="general-wrapper">
-        <Header />
-        <TopSection />
-        <Skills />
-        <ExperienceEducation
-          id={ lang === "english" ? "Education" : "Образование" }
-          data="educationData"
-        />
-        <Projects />
-        <ExperienceEducation
-          id={ lang === "english" ? "Experience" : "Опыт" }
-          data="experienceData"
-        />
-        <Languages />
-        <ContactMe />
-      </div>
+      { !isLoaded ? <PreloadPage /> :
+        <div className="general-wrapper">
+          <Header />
+          <TopSection />
+          <Skills />
+          <ExperienceEducation
+            id={ lang === "english" ? "Education" : "Образование" }
+            data="educationData"
+          />
+          <Projects />
+          <ExperienceEducation
+            id={ lang === "english" ? "Experience" : "Опыт" }
+            data="experienceData"
+          />
+          <Languages />
+          <ContactMe />
+        </div>
+      }
     </>
   );
 }
