@@ -5,6 +5,7 @@ $maxWidth: 1440
 	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 280px) / #{$maxWidth}))
 
 .top-section-wrapper
+  position: relative
   padding-top: 50px
   display: flex
   justify-content: space-between
@@ -14,6 +15,42 @@ $maxWidth: 1440
   @media only screen and (max-width: 426px)
     flex-direction: column
     align-items: center
+
+.lang-mobile
+  display: none
+  position: absolute
+  width: 80px
+  height: 120px
+  left: -23vw
+  top: 58px
+  justify-content: space-around
+  align-items: center
+  flex-direction: column
+  border: 2px solid #eeeeee
+  background-color: #fff
+  z-index: 2
+  transition: all 0.2s ease-in
+  & .lang-arrow
+    position: absolute
+    top: 31%
+    left: 60px
+    transition: all 0.2s ease-in
+  @media only screen and (max-width: 425px)
+    display: flex
+  @media only screen and (max-width: 375px)
+    left: -26vw
+  @media only screen and (max-width: 320px)
+    left: -31vw
+  & .flag-mobile
+    width: 50px
+    transition: all 0.2s ease-in
+    &:active
+      filter: opacity(0.6)
+  &[data-state="active"]
+    @media only screen and (max-width: 425px)
+      left: -10vw
+    & .lang-arrow
+      transform: rotate(180deg)
 
 .top-section-text
   height: auto

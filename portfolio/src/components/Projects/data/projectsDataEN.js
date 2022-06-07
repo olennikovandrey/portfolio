@@ -1,13 +1,13 @@
-import scandiDemoAnim from "../../assets/images/projects/scandi_demo.gif";
-import tripHouseDemoAnim from "../../assets/images/projects/TripHouse_demo.gif";
-import modnikkyAnim from "../../assets/images/projects/Modnikky_demo.gif";
-import dictionaryAnim from "../../assets/images/projects/dictionary_demo.gif";
-import scandiDemoImg from "../../assets/images/projects/scandi_demo.png";
-import tripHouseDemoImg from "../../assets/images/projects/triphouse_demo.png";
-import modnikkyDemoImg from "../../assets/images/projects/modnikky_demo.png";
-import dictionaryDemoImg from "../../assets/images/projects/dictionary_demo.png";
+import scandiDemoAnim from "../../../assets/images/projects/scandi_demo.gif";
+import tripHouseDemoAnim from "../../../assets/images/projects/TripHouse_demo.gif";
+import modnikkyAnim from "../../../assets/images/projects/Modnikky_demo.gif";
+import dictionaryAnim from "../../../assets/images/projects/dictionary_demo.gif";
+import scandiDemoImg from "../../../assets/images/projects/scandi_demo.png";
+import tripHouseDemoImg from "../../../assets/images/projects/triphouse_demo.png";
+import modnikkyDemoImg from "../../../assets/images/projects/modnikky_demo.png";
+import dictionaryDemoImg from "../../../assets/images/projects/dictionary_demo.png";
 
-export const projectsData = [
+const projectsDataEN = [
   {
     title: "Scandi online shop (noncommercial project)",
     description: "Online shop, that includes different categories of items like Dress & Tech. All data is in graphQL scheme. Filter products by search query",
@@ -37,3 +37,5 @@ export const projectsData = [
     link: "https://github.com/olennikovandrey/satellite-test"
   },
 ];
+
+export default projectsDataEN;

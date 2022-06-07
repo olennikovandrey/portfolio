@@ -1,4 +1,4 @@
-export const experienceData = [
+export const experienceDataEN = [
   {
     years: "March 2021 - till now",
     title: "Freelance",

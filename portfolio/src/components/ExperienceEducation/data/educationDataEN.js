@@ -1,4 +1,4 @@
-export const educationData = [
+export const educationDataEN = [
   {
     years: "June 2021 - March 2022",
     title: "IT School Intellect Fox",
