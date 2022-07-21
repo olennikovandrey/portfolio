@@ -57,19 +57,21 @@ img
   display: block
   object-fit: scale-down
 
-input,
-button,
-select
+button
   font: inherit
+  @media only screen and (max-width: 768px)
+    font-size: 15px
 
 section
   margin: 0 104px
   height: auto
   @media only screen and (max-width: 1280px)
     margin: 0 70px
-  @media only screen and (max-width: 1025px)
+  @media only screen and (max-width: 1024px)
     margin: 0 50px
-  @media only screen and (max-width: 426px)
+  @media only screen and (max-width: 768px)
+    margin: 0 20px
+  @media only screen and (max-width: 425px)
     margin: 0 30px
 
 button
@@ -79,6 +81,8 @@ button
   cursor: pointer
   color: #fff
   border: none
+  box-sizing: border-box
+  padding: 0
   @include adaptiv-font(20, 15)
   line-height: 40px
   text-align: center

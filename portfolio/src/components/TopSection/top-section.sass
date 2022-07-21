@@ -18,37 +18,36 @@ $maxWidth: 1440
 
 .lang-mobile
   display: none
-  position: absolute
+  position: fixed
   width: 80px
-  height: 120px
-  left: -23vw
+  height: auto
+  left: -67px
   top: 58px
-  justify-content: space-around
-  align-items: center
-  flex-direction: column
+  padding: 5px 0
   border: 2px solid #eeeeee
   background-color: #fff
   z-index: 2
   transition: all 0.2s ease-in
   & .lang-arrow
     position: absolute
-    top: 31%
-    left: 60px
+    top: 42%
+    left: 63px
     transition: all 0.2s ease-in
   @media only screen and (max-width: 425px)
     display: flex
-  @media only screen and (max-width: 375px)
-    left: -26vw
-  @media only screen and (max-width: 320px)
-    left: -31vw
+    justify-content: space-around
+    align-items: center
+    flex-direction: column
   & .flag-mobile
     width: 50px
     transition: all 0.2s ease-in
     &:active
       filter: opacity(0.6)
+    &:first-child
+      margin-bottom: 5px
   &[data-state="active"]
     @media only screen and (max-width: 425px)
-      left: -10vw
+      left: -10px
     & .lang-arrow
       transform: rotate(180deg)
 

@@ -10,7 +10,7 @@ export default function PreloadPage() {
 
   const text = [
     "Here you can find out\n",
-    "all the information you \n",
+    "all information you \n",
     "need about me and, \n",
     "if necessary, download a CV"
   ];

@@ -12,7 +12,7 @@ import React, { useState } from "react";
 export default function TopSection() {
   const [isLangVisible, setIsLangVisible] = useState(false);
   const lang = useSelector(state => state.lang);
-  const langMobile = document.querySelector(".lang-mobile");
+  const langMobile = document.getElementById("langMobile");
   const dispatch = useDispatch();
 
   const setVisibleFn = () => {
@@ -40,7 +40,7 @@ export default function TopSection() {
 
   return (
     <section className="top-section-wrapper" id={ lang === "english" ? "About" : "ОбоМне" }>
-      <div className="lang-mobile" data-state="">
+      <div id="langMobile" className="lang-mobile" data-state="">
         <img src={ russian } className="flag-mobile" alt="russian" onClick={ setRU } />
         <img src={ english } className="flag-mobile" alt="english" onClick={ setEN } />
         <div>

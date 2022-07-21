@@ -23,19 +23,39 @@ export default function ProjectItem({ title, description, data }) {
           src={ img }
           alt={ img.title }
         />
-      ) }
+      )}
+
       <div className="project-description">
         <p>{ title }</p>
         <span className="project-description-text">{ description }</span>
-        <a href={ data.find(item => item.title === title).link }>
-          <button>See on Github</button>
-        </a>
+        <div className="project-description-btns-wrapper">
+          <a href={ data.find(item => item.title === title).GitLink } target="blank">
+            <button>{ lang === "english" ? "See on Github" : "Посетить Github" }</button>
+          </a>
+          { data.find(item => item.title === title).deployLink &&
+          <a href={ data.find(item => item.title === title).deployLink } target="blank">
+            <button>{ lang === "english" ? "Deployed version" : "Онлайн версия" }</button>
+          </a>
+          }
+        </div>
       </div>
+
       <div className="project-description-mobile">
         <span className="project-description-text-mobile">{ description }</span>
-        <a href={ data.find(item => item.title === title).link }>
-          <button>{ lang === "english" ? "See on Github" : "Посетить Github" }</button>
-        </a>
+        <div className="project-description-btns-wrapper">
+          <button>
+            <a href={ data.find(item => item.title === title).GitLink } target="blank">
+              { lang === "english" ? "See on Github" : "Посетить Github" }
+            </a>
+          </button>
+          { data.find(item => item.title === title).deployLink &&
+              <button>
+                <a href={ data.find(item => item.title === title).deployLink } target="blank">
+                  { lang === "english" ? "Deployed version" : "Онлайн версия" }
+                </a>
+              </button>
+          }
+        </div>
       </div>
     </div>
   );
