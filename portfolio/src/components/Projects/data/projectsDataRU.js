@@ -4,12 +4,14 @@ import modnikkyAnim from "../../../assets/images/projects/Modnikky_demo.gif";
 import dictionaryAnim from "../../../assets/images/projects/dictionary_demo.gif";
 import NotesEditorReactAmin from "../../../assets/images/projects/notes_react_demo.gif";
 import NotesEditorAngularAmin from "../../../assets/images/projects/notes_angular_demo.gif";
+import formValidateDemoAnim from "../../../assets/images/projects/form_validation_demo.gif";
 import scandiDemoImg from "../../../assets/images/projects/scandi_demo.png";
 import tripHouseDemoImg from "../../../assets/images/projects/triphouse_demo.png";
 import modnikkyDemoImg from "../../../assets/images/projects/modnikky_demo.png";
 import dictionaryDemoImg from "../../../assets/images/projects/dictionary_demo.png";
 import NotesEditorReactImg from "../../../assets/images/projects/notes_react_demo.png";
 import NotesEditorAngularImg from "../../../assets/images/projects/notes_angular_demo.png";
+import formValidateDemoImg from "../../../assets/images/projects/form-demo.png";
 
 const projectsDataRU = [
   {
@@ -59,6 +61,14 @@ const projectsDataRU = [
     image: [NotesEditorAngularImg],
     GitLink: "https://github.com/olennikovandrey/notes_editor_angular",
     deployLink: "https://olennikov-notes-editor-angular.netlify.app/"
+  },
+  {
+    title: "Form validation",
+    description: "Простая форма, написанная на React TS, для проверки правильности введенных данных. Вся валидация написана вречную",
+    anim: [formValidateDemoAnim],
+    image: [formValidateDemoImg],
+    GitLink: "https://github.com/olennikovandrey/form-validate",
+    deployLink: "https://olennikov-form-validate.netlify.app"
   },
 ];
 
