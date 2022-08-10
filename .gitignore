@@ -1,4 +1,4 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+/portfolio
 
 # dependencies
 /node_modules
@@ -9,7 +9,6 @@
 /coverage
 
 # production
-/build
 /configs/dist
 
 # misc
