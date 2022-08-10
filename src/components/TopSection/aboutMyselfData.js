@@ -1,3 +1,9 @@
-export const aboutEN = "Hi! I'm looking for a job or internship as a Junior JavaScript/React Developer. I took the 'Front-end Developer (ReactJS)' course at Intellect Fox School. Studied and mastered HTML, CSS, JavaScript, React. I have practical experience in creating projects from scratch. I quickly master new information, I am able to hear and accept criticism, I can interact in a team. Now I continue to develop and practice new technologies for me. I will be glad if you consider my resume. Thanks in advance for your reply!";
+export const aboutEN = "Hi! I'm looking for a job as a JavaScript/React Developer. My main technology stack: " +
+"HTML, CSS (with pre-processors like SCSS & SASS), JavaScript, React, TypeScript, Angular. I have practical experience " +
+"in creating projects from scratch. I quickly master new information, I am able to hear and accept criticism, I can interact in a team. " +
+"Now I continue to developing and practice new technologies for me. I will be glad if you consider my resume. Thanks in advance for your reply!";
 
-export const aboutRU = "Привет! Я открыт для вакансий или стажировок на позицию Junior JavaScript/React Developer. Я закончил курс по Front-end разработке в онлайн школе Intellect Fox. Изучил и освоил HTML, CSS, JavaScript, React. Имею практический опыт создания проектов 'с нуля'. Я быстро усваиваю новую информацию, адекватно воспринимаю критику и отлично работаю в составе команды. Сейчас я продолжаю развивать свои теоретические знания и практические навыки, изучая новые для меня технологии. Буду благодарен, если Вы ознакомитесь с моим резюме. Заранее благодарю за обратную связь!";
+export const aboutRU = "Привет! Я ищу работу разработчика JavaScript/React. Мой основной технологический стек: " +
+"HTML, CSS (с предпроцессорами, такими как SCSS и SASS), JavaScript, React, TypeScript, Angular. У меня есть практический опыт " +
+"создания проектов с нуля. Я быстро осваиваю новую информацию, умею слышать и принимать критику, могу взаимодействовать в команде. " +
+"Сейчас я продолжаю развивать и практиковать для себя новые технологии. Я буду рад, если вы рассмотрите мое резюме. Заранее спасибо за ваш ответ!";
