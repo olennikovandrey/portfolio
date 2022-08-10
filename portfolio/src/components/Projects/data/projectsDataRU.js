@@ -16,7 +16,7 @@ import formValidateDemoImg from "../../../assets/images/projects/form-demo.png";
 const projectsDataRU = [
   {
     title: "Онлайн магазин",
-    description: "Онлайн магазин, содержащий различные категории такие как 'Одежда' и 'Техника'. Получение данных при помощи graphQL. Фильтрация категорий по соотствующему запросу",
+    description: "Онлайн магазин. Содержит различные категории, такие как 'Одежда' и 'Техника'. Получение данных при помощи GraphQL. Фильтрация категорий по соответствующему запросу",
     anim: [scandiDemoAnim],
     image: [scandiDemoImg],
     GitLink: "https://github.com/olennikovandrey/scandi-test",
@@ -40,7 +40,7 @@ const projectsDataRU = [
   },
   {
     title: "Толковый словарь",
-    description: "Английский толковый словарь. Источник - https://dictionaryapi.dev/. Технологии: React, Redux, Redux thunk, TypeScript, react router, css",
+    description: "Английский толковый словарь. Источник - https://dictionaryapi.dev/. Технологии: React, Redux, Redux thunk, TypeScript, react router, CSS",
     anim: [dictionaryAnim],
     image: [dictionaryDemoImg],
     GitLink: "https://github.com/olennikovandrey/satellite-test",
@@ -48,7 +48,7 @@ const projectsDataRU = [
   },
   {
     title: "Редактор заметок (ReactJS)",
-    description: "Текстовый редактор заметок. Реализована возможность добаления, редактирования, поиска по хэштегу и удаления заметок",
+    description: "Текстовый редактор заметок. Реализована возможность добавления, редактирования, поиска по хэштегу и удаления заметок",
     anim: [NotesEditorReactAmin],
     image: [NotesEditorReactImg],
     GitLink: "https://github.com/olennikovandrey/notes_editor",
@@ -56,7 +56,7 @@ const projectsDataRU = [
   },
   {
     title: "Редактор заметок (Angular)",
-    description: "Текстовый редактор заметок. Реализована возможность добаления, редактирования, поиска по содержимому и удаления. Регистрация (авторизация) пользователей",
+    description: "Текстовый редактор заметок. Реализована возможность добавления, редактирования, поиска по содержимому и удаления. Регистрация (авторизация) пользователей",
     anim: [NotesEditorAngularAmin],
     image: [NotesEditorAngularImg],
     GitLink: "https://github.com/olennikovandrey/notes_editor_angular",
@@ -64,7 +64,7 @@ const projectsDataRU = [
   },
   {
     title: "Form validation",
-    description: "Простая форма, написанная на React TS, для проверки правильности введенных данных. Вся валидация написана вречную",
+    description: "Простая форма, написанная на React TS, для проверки правильности введенных данных. Вся валидация написана вручную",
     anim: [formValidateDemoAnim],
     image: [formValidateDemoImg],
     GitLink: "https://github.com/olennikovandrey/form-validate",

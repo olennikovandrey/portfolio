@@ -16,7 +16,7 @@ import formValidateDemoImg from "../../../assets/images/projects/form-demo.png";
 const projectsDataEN = [
   {
     title: "Online shop",
-    description: "Online shop, that includes different categories of items like Dress & Tech. All data is in graphQL scheme. Filter products by search query",
+    description: "Online shop, that includes different categories of items like Dress & Tech. All data is in GraphQL scheme. Filter products by search query",
     anim: [scandiDemoAnim],
     image: [scandiDemoImg],
     GitLink: "https://github.com/olennikovandrey/scandi-test",
@@ -40,7 +40,7 @@ const projectsDataEN = [
   },
   {
     title: "Dictionary",
-    description: "English dictionary. Source - https://dictionaryapi.dev/. Technologies: React, Redux, Redux thunk, TypeScript, react router, css",
+    description: "English dictionary. Source - https://dictionaryapi.dev/. Technologies: React, Redux, Redux thunk, TypeScript, react router, CSS",
     anim: [dictionaryAnim],
     image: [dictionaryDemoImg],
     GitLink: "https://github.com/olennikovandrey/satellite-test",
