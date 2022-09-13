@@ -10,14 +10,16 @@ import { useSelector, useDispatch } from "react-redux";
 import React, { useState } from "react";
 
 export default function TopSection() {
+  const langMobile = document.getElementById("langMobile");
   const [isLangVisible, setIsLangVisible] = useState(false);
   const lang = useSelector(state => state.lang);
-  const langMobile = document.getElementById("langMobile");
   const dispatch = useDispatch();
 
   const setVisibleFn = () => {
     setIsLangVisible(!isLangVisible);
-    langMobile.setAttribute("data-state", isLangVisible ? "" : "active");
+    setTimeout(() => {
+      langMobile.setAttribute("data-state", isLangVisible ? "" : "active");
+    }, 100);
   };
 
   const setRU = () => {

@@ -1,34 +1,35 @@
 import scandiDemoAnim from "../../../assets/images/projects/scandi_demo.gif";
-import tripHouseDemoAnim from "../../../assets/images/projects/TripHouse_demo.gif";
 import modnikkyAnim from "../../../assets/images/projects/Modnikky_demo.gif";
 import dictionaryAnim from "../../../assets/images/projects/dictionary_demo.gif";
 import NotesEditorReactAmin from "../../../assets/images/projects/notes_react_demo.gif";
 import NotesEditorAngularAmin from "../../../assets/images/projects/notes_angular_demo.gif";
 import formValidateDemoAnim from "../../../assets/images/projects/form_validation_demo.gif";
+import webLibruaryDemoAnim from "../../../assets/images/projects/web_libruary_demo.gif";
+
 import scandiDemoImg from "../../../assets/images/projects/scandi_demo.png";
-import tripHouseDemoImg from "../../../assets/images/projects/triphouse_demo.png";
 import modnikkyDemoImg from "../../../assets/images/projects/modnikky_demo.png";
 import dictionaryDemoImg from "../../../assets/images/projects/dictionary_demo.png";
 import NotesEditorReactImg from "../../../assets/images/projects/notes_react_demo.png";
 import NotesEditorAngularImg from "../../../assets/images/projects/notes_angular_demo.png";
 import formValidateDemoImg from "../../../assets/images/projects/form-demo.png";
+import devLibruaryDemoImg from "../../../assets/images/projects/devlibruary_demo.png";
 
 const projectsDataEN = [
   {
     title: "Online shop",
-    description: "Online shop, that includes different categories of items like Dress & Tech. All data is in GraphQL scheme. Filter products by search query",
+    description: "Online shop, that includes different categories of items like Dress & Tech. Filter products by search query. Stack: ReactJS, Redux, GraphQL, Apollo, CSS",
     anim: [scandiDemoAnim],
     image: [scandiDemoImg],
     GitLink: "https://github.com/olennikovandrey/scandi-test",
     deployLink: null
   },
   {
-    title: "TripHouse",
-    description: "Landing-page for online travel agency for lodging reservations",
-    anim: [tripHouseDemoAnim],
-    image: [tripHouseDemoImg],
-    GitLink: "https://github.com/olennikovandrey/if-js/tree/main/TripHouse",
-    deployLink: null
+    title: "Dev libruary",
+    description: "Online libruary for developers, who uses different programming languagues. All data on google-disk. Stack: ReactJS, Redux, SASS",
+    anim: [webLibruaryDemoAnim],
+    image: [devLibruaryDemoImg],
+    GitLink: "https://github.com/olennikovandrey/web-libruary",
+    deployLink: "https://devlibruary.netlify.app/"
   },
   {
     title: "MODNIKKY",
@@ -40,7 +41,7 @@ const projectsDataEN = [
   },
   {
     title: "Dictionary",
-    description: "English dictionary. Source - https://dictionaryapi.dev/. Technologies: React, Redux, Redux thunk, TypeScript, react router, CSS",
+    description: "English dictionary. Source - https://dictionaryapi.dev/. Stack: React, Redux, Redux thunk, TypeScript, react router, CSS",
     anim: [dictionaryAnim],
     image: [dictionaryDemoImg],
     GitLink: "https://github.com/olennikovandrey/satellite-test",
