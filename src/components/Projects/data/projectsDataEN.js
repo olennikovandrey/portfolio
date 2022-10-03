@@ -5,6 +5,7 @@ import NotesEditorReactAmin from "../../../assets/images/projects/notes_react_de
 import NotesEditorAngularAmin from "../../../assets/images/projects/notes_angular_demo.gif";
 import formValidateDemoAnim from "../../../assets/images/projects/form_validation_demo.gif";
 import webLibruaryDemoAnim from "../../../assets/images/projects/web_libruary_demo.gif";
+import scaledRegisterSPAAnim from "../../../assets/images/projects/scaled_register_SPA_demo.gif";
 
 import scandiDemoImg from "../../../assets/images/projects/scandi_demo.png";
 import modnikkyDemoImg from "../../../assets/images/projects/modnikky_demo.png";
@@ -13,8 +14,17 @@ import NotesEditorReactImg from "../../../assets/images/projects/notes_react_dem
 import NotesEditorAngularImg from "../../../assets/images/projects/notes_angular_demo.png";
 import formValidateDemoImg from "../../../assets/images/projects/form-demo.png";
 import devLibruaryDemoImg from "../../../assets/images/projects/devlibruary_demo.png";
+import scaledRegisterSPAImg from "../../../assets/images/projects/scaled_register_SPA_demo.png";
 
 const projectsDataEN = [
+  {
+    title: "Dev libruary",
+    description: "Online libruary for developers, who uses different programming languagues. All data on google-disk. Stack: ReactJS, Redux, SASS",
+    anim: [webLibruaryDemoAnim],
+    image: [devLibruaryDemoImg],
+    GitLink: "https://github.com/olennikovandrey/web-libruary",
+    deployLink: "https://devlibruary.netlify.app/"
+  },
   {
     title: "Online shop",
     description: "Online shop, that includes different categories of items like Dress & Tech. Filter products by search query. Stack: ReactJS, Redux, GraphQL, Apollo, CSS",
@@ -24,12 +34,12 @@ const projectsDataEN = [
     deployLink: null
   },
   {
-    title: "Dev libruary",
-    description: "Online libruary for developers, who uses different programming languagues. All data on google-disk. Stack: ReactJS, Redux, SASS",
-    anim: [webLibruaryDemoAnim],
-    image: [devLibruaryDemoImg],
-    GitLink: "https://github.com/olennikovandrey/web-libruary",
-    deployLink: "https://devlibruary.netlify.app/"
+    title: "Two step registration form",
+    description: "Registration form that provides two-step user data entry. Validation after each stage with subsequent display of the entered information / indication of data invalidity. Stack: ReactJS, Redux, SASS, Ajv JSON schema validator",
+    anim: [scaledRegisterSPAAnim],
+    image: [scaledRegisterSPAImg],
+    GitLink: "https://github.com/olennikovandrey/scaled_register",
+    deployLink: "https://scaledregister.netlify.app/"
   },
   {
     title: "MODNIKKY",
