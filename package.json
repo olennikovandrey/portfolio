@@ -15,7 +15,8 @@
   "scripts": {
     "start-react": "react-scripts start",
     "start": "webpack serve --open --config ./configs/webpack.config.js",
-    "build": "webpack --config ./configs/webpack.config.js",
+    "build-pack": "webpack --config ./configs/webpack.config.js",
+    "build-react": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "es": "eslint --ext .js,.jsx .",
