@@ -1,5 +1,10 @@
 export const experienceDataRU = [
   {
+    years: "Октябрь 2022 - Февраль 2023",
+    title: "Стажировка (ITechArt)",
+    description: "Full-stack developer (MERN)"
+  },
+  {
     years: "Март 2022 - настоящее время",
     title: "Фриланс",
     description: "Junior Front-end developer (ReactJS)"

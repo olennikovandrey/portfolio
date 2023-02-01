@@ -5,8 +5,11 @@ import projectsDataEN from "./data/projectsDataEN";
 import projectsDataRU from "./data/projectsDataRU";
 import { useSelector } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import SwiperCore, { Navigation, Mousewheel } from "swiper";
 import React from "react";
+
+
+SwiperCore.use([Navigation, Mousewheel]);
 
 export default function Projects() {
   const lang = useSelector(state => state.lang);
@@ -15,7 +18,7 @@ export default function Projects() {
     return (
       <>
         <Swiper
-          cssMode={ true}
+          cssMode={ true }
           loop={ true }
           slidesPerView={ 1 }
           centeredSlides={ true }
@@ -28,7 +31,6 @@ export default function Projects() {
           touchRatio={ 1 }
           slideToClickedSlide={ true }
           spaceBetween={ 20 }
-          modules={ [Navigation, Pagination, Mousewheel, Keyboard] }
           className="projects-preview-wrapper"
         >
           { projectsDataEN.map(item =>
@@ -62,7 +64,7 @@ export default function Projects() {
           touchRatio={ 1 }
           slideToClickedSlide={ true }
           spaceBetween={ 20 }
-          modules={ [Navigation, Pagination, Mousewheel, Keyboard] }
+          modules={ [Navigation, Mousewheel] }
           className="projects-preview-wrapper"
         >
           { projectsDataRU.map(item =>

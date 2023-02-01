@@ -38,9 +38,10 @@ $maxWidth: 1440
   @media only screen and (max-width: 1281px)
     height: auto
   @media only screen and (max-width: 425px)
-    height: 115px
+    height: 105px
     width: 18%
     margin: 0 13px 5px
+    padding-top: 0
   @media only screen and (max-width: 375px)
     margin: 0 10px 5px
   @media only screen and (max-width: 320px)
@@ -48,7 +49,7 @@ $maxWidth: 1440
 
 .skill-items-wrapper
   width: 100%
-  height: 240px
+  height: 230px
   display: flex
   justify-content: center
   flex-flow: wrap
@@ -57,13 +58,15 @@ $maxWidth: 1440
   @media only screen and (max-width: 1024px)
     height: 218px
   @media only screen and (max-width: 425px)
-    height: 125px
+    height: 110px
   &[data-state="active"]
-    height: 960px
+    height: 1150px
+    @media only screen and (max-width: 1024px)
+      height: 1092px
     @media only screen and (max-width: 768px)
-      height: 859px
+      height: 1069px
     @media only screen and (max-width: 425px)
-      height: 650px
+      height: 660px
 
 .skill-item-logo-title
   height: auto
@@ -74,6 +77,8 @@ $maxWidth: 1440
   margin-bottom: 20px
   @media only screen and (max-width: 1025px)
     margin-bottom: 10px
+  @media only screen and (min-width: 425px)
+    margin-bottom: 5px
 
 .skill-item-logo
   height: 130px
@@ -83,6 +88,7 @@ $maxWidth: 1440
   justify-content: center
   @media only screen and (max-width: 425px)
     height: 70px
+    margin-bottom: 5px
   & img
     width: 100%
 

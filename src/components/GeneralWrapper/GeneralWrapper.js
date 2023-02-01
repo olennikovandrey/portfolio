@@ -11,14 +11,14 @@ import "./general-wrapper.sass";
 import React, { useEffect, useState } from "react";
 
 function GeneralWrapper() {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(true);
   const lang = useSelector(state => state.lang);
 
-  useEffect(() => {
+  /*   useEffect(() => {
     setTimeout(() => {
       setIsLoaded(true);
     }, 8000);
-  }, []);
+  }, []); */
 
   return (
     <>

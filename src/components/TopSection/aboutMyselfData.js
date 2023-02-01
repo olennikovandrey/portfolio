@@ -1,7 +1,7 @@
-export const aboutEN = "Hi! I'm looking for a job as a JavaScript/React Developer. My main technology stack: " +
-"HTML, CSS (with pre-processors like SCSS & SASS), JavaScript, React, TypeScript, Angular. I have practical experience " +
-"in creating projects from scratch. I quickly master new information, I am able to hear and accept criticism, I can interact in a team. " +
-"Now I continue to developing and practice new technologies for me. I will be glad if you consider my resume. Thanks in advance for your reply!";
+export const aboutEN = "2+ years of experience in web application development. Strong foundational knowledge in JavaScript and React.js. " +
+"Able to juggle multiple priorities and handle work requests with a sense of urgency, meet deadlines, find best solutions for developing problems. " +
+"to learn and dig into new technologies and can pick them up quickly. Have an extreme attention to details. Good communication skills, " +
+"Love  both written and verbal.";
 
 export const aboutRU = "Привет! Я ищу работу разработчика JavaScript/React. Мой основной технологический стек: " +
 "HTML, CSS (с предпроцессорами, такими как SCSS и SASS), JavaScript, React, TypeScript, Angular. У меня есть практический опыт " +

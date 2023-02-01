@@ -5,7 +5,7 @@ import { RU, EN } from "../../store/actions/action-types";
 import photo from  "../../assets/images/5.jpg";
 import arrow from "../../assets/images/projects/arrow.svg";
 import CVPDF from "../../files/Andrey OlennikovCV.pdf";
-import CVPNG from "../../files/Andrey OlennikovCV.png";
+import CVJPG from "../../files/Andrey OlennikovCV.jpg";
 import { useSelector, useDispatch } from "react-redux";
 import React, { useState } from "react";
 
@@ -71,8 +71,8 @@ export default function TopSection() {
             </a>
           </button>
           <button>
-            <a href={ CVPNG } download={ lang === "english" ? "Andrey_Olennikov_CV_PNG" : "Андрей_Оленников_резюме_PNG" }>
-              { lang === "english" ? "Download CV (png)" : "Скачать резюме (png)" }
+            <a href={ CVJPG } download={ lang === "english" ? "Andrey_Olennikov_CV_JPG" : "Андрей_Оленников_резюме_JPG" }>
+              { lang === "english" ? "Download CV (jpg)" : "Скачать резюме (jpg)" }
             </a>
           </button>
         </div>
