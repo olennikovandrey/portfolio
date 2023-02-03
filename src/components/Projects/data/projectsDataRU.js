@@ -1,22 +1,30 @@
 import scandiDemoAnim from "../../../assets/images/projects/scandi_demo.gif";
-import modnikkyAnim from "../../../assets/images/projects/Modnikky_demo.gif";
 import dictionaryAnim from "../../../assets/images/projects/dictionary_demo.gif";
 import NotesEditorReactAmin from "../../../assets/images/projects/notes_react_demo.gif";
 import NotesEditorAngularAmin from "../../../assets/images/projects/notes_angular_demo.gif";
 import formValidateDemoAnim from "../../../assets/images/projects/form_validation_demo.gif";
 import webLibruaryDemoAnim from "../../../assets/images/projects/web_libruary_demo.gif";
 import scaledRegisterSPAAnim from "../../../assets/images/projects/scaled_register_SPA_demo.gif";
+import cinemaAnim from "../../../assets/images/projects/cinema_demo.gif";
 
 import scandiDemoImg from "../../../assets/images/projects/scandi_demo.png";
-import modnikkyDemoImg from "../../../assets/images/projects/modnikky_demo.png";
 import dictionaryDemoImg from "../../../assets/images/projects/dictionary_demo.png";
 import NotesEditorReactImg from "../../../assets/images/projects/notes_react_demo.png";
 import NotesEditorAngularImg from "../../../assets/images/projects/notes_angular_demo.png";
 import formValidateDemoImg from "../../../assets/images/projects/form-demo.png";
 import devLibruaryDemoImg from "../../../assets/images/projects/devlibruary_demo.png";
 import scaledRegisterSPAImg from "../../../assets/images/projects/scaled_register_SPA_demo.png";
+import cinemaImg from "../../../assets/images/projects/cinema_demo.png";
 
 const projectsDataRU = [
+  {
+    title: "Кинотеатр",
+    description: "Онлайн сервис для покупки билетов в кино. Реализована администраторская часть для работы с БД из интерфейса. Венцом покупки билета является отправка письма с билетами на указанный почтовый адрес. Стэк: ReactJS, Redux, NodeJS, Express.js, MongoDB, SASS, Stripe, socket-io",
+    anim: [cinemaAnim],
+    image: [cinemaImg],
+    GitLink: "https://github.com/olennikovandrey/cinema_frontend",
+    deployLink: "https://just-cinema.netlify.app"
+  },
   {
     title: "Dev libruary",
     description: "Онлайн библиотека для разработчиков, пишущих на различных языках программироваия. Материал на google-диске. Стэк: ReactJS, Redux, SASS",
@@ -40,14 +48,6 @@ const projectsDataRU = [
     image: [scaledRegisterSPAImg],
     GitLink: "https://github.com/olennikovandrey/scaled_register",
     deployLink: "https://scaledregister.netlify.app/"
-  },
-  {
-    title: "MODNIKKY",
-    description: "Онлайн магазин одежды. Реализован процесс авторизации с использованием встроенных данных. Фильтрация продуктов по поисковому запросу",
-    anim: [modnikkyAnim],
-    image: [modnikkyDemoImg],
-    GitLink: "https://github.com/olennikovandrey/if-diploma",
-    deployLink: null
   },
   {
     title: "Толковый словарь",

@@ -5,7 +5,7 @@ export const experienceDataRU = [
     description: "Full-stack developer (MERN)"
   },
   {
-    years: "Март 2022 - настоящее время",
+    years: "Май 2020 - настоящее время",
     title: "Фриланс",
     description: "Junior Front-end developer (ReactJS)"
   },

@@ -6,29 +6,29 @@ export default function ProjectItem({ title, description, data }) {
   const lang = useSelector(state => state.lang);
 
   return (
-    <div className="project-item-wrapper">
+    <div className="project-item">
+      <p>{ title }</p>
       <p className="project-item-title-mobile">{ title }</p>
       { data.find(item => item.title === title).anim.map(img =>
-        <img
-          key={ img }
-          className="project-item-anim"
-          src={ img }
-          alt={ img.title }
-        />
+        <div key={ img } className="project-item__anim">
+          <img
+            src={ img }
+            alt={ img.title }
+          />
+        </div>
       ) }
       { data.find(item => item.title === title).image.map(img =>
         <img
           key={ img }
-          className="project-item-img"
+          className="project-item-img-mobile"
           src={ img }
           alt={ img.title }
         />
       )}
 
       <div className="project-description">
-        <p>{ title }</p>
         <span className="project-description-text">{ description }</span>
-        <div className="project-description-btns-wrapper">
+        <div className="project-description__links">
           <a href={ data.find(item => item.title === title).GitLink } target="blank">
             <button>{ lang === "english" ? "See on Github" : "Посетить Github" }</button>
           </a>
@@ -42,7 +42,7 @@ export default function ProjectItem({ title, description, data }) {
 
       <div className="project-description-mobile">
         <span className="project-description-text-mobile">{ description }</span>
-        <div className="project-description-btns-wrapper">
+        <div className="project-description__links">
           <button>
             <a href={ data.find(item => item.title === title).GitLink } target="blank">
               { lang === "english" ? "See on Github" : "Посетить Github" }

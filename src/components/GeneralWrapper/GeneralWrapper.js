@@ -1,5 +1,4 @@
 import PreloadPage from "../PreloadPage/PreloadPage";
-import Header from "../Header/Header";
 import TopSection from "../TopSection/TopSection";
 import Skills from "../Skills/Skills";
 import ExperienceEducation from "../ExperienceEducation/ExperienceEducation";
@@ -24,7 +23,6 @@ function GeneralWrapper() {
     <>
       { !isLoaded ? <PreloadPage /> :
         <div className="general-wrapper">
-          <Header />
           <TopSection />
           <Skills />
           <ExperienceEducation
